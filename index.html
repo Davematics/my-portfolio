@@ -1,146 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="David Ogwuche — fullstack engineer in Abuja, Nigeria. Laravel, Vue.js, and product engineering for fintech, e-commerce, and enterprise."
+    />
+    <meta name="theme-color" content="#070708" />
+    <meta property="og:title" content="David Ogwuche | Fullstack Engineer" />
+    <meta
+      property="og:description"
+      content="Fullstack engineer building scalable Laravel and Vue.js products across fintech, e-commerce, and enterprise."
+    />
+    <meta property="og:type" content="website" />
     <title>David Ogwuche | Fullstack Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-900">
-   
-   
-        <div class="min-h-screen bg-gray-100 pb-6">
-          <header class="bg-blue-600 text-white py-6 text-center">
-            <h1 class="text-3xl font-bold">David Ogwuche</h1>
-            <p class="text-lg">Fullstack Engineer </p>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+          <a class="logo" href="#home">David<span>.</span></a>
+
+          <ul class="nav-list">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a
+              class="icon-link"
+              href="https://github.com/Davematics"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.207 11.385.6.113.793-.258.793-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.755-1.333-1.755-1.089-.744.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.107-.775.42-1.305.763-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.237-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.289-1.552 3.296-1.23 3.296-1.23.654 1.652.243 2.873.12 3.176.771.84 1.236 1.91 1.236 3.22 0 4.61-2.805 5.625-5.478 5.921.43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.192.696.798.576 4.765-1.585 8.199-6.081 8.199-11.383 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a
+              class="icon-link"
+              href="https://www.linkedin.com/in/davematics"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451c.98 0 1.778-.774 1.778-1.729V1.729C24 .774 23.206 0 22.225 0zM7.119 20.452H3.557V9.175h3.562v11.277zM5.338 7.701c-1.14 0-2.064-.928-2.064-2.068 0-1.14.924-2.068 2.064-2.068s2.063.928 2.063 2.068c0 1.14-.923 2.068-2.063 2.068zm15.113 12.751h-3.562v-5.48c0-1.307-.027-2.986-1.821-2.986-1.824 0-2.103 1.425-2.103 2.895v5.57h-3.561V9.175h3.419v1.543h.05c.477-.9 1.639-1.849 3.372-1.849 3.607 0 4.275 2.371 4.275 5.457v6.126z"
+                />
+              </svg>
+            </a>
+            <a class="btn btn-primary" href="mailto:davgwuche@gmail.com">Hire me</a>
+            <button
+              class="nav-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-nav"
+              aria-label="Menu"
+            >
+              <span class="nav-toggle-bars" aria-hidden="true"></span>
+            </button>
+          </div>
+        </nav>
+
+        <div class="mobile-panel" id="mobile-nav">
+          <a href="#work">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" id="home" aria-label="Introduction">
+        <div class="hero-copy" data-reveal>
+          <p class="hero-kicker">Abuja, Nigeria · Fullstack Engineer</p>
+          <h1 class="hero-title">David <em>Ogwuche</em></h1>
+          <p class="hero-lead">
+            I design and ship scalable products across fintech, e-commerce, and
+            enterprise — with Laravel, Vue.js, and a bias for clean, maintainable
+            systems.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">View selected work</a>
+            <a class="btn btn-ghost" href="mailto:davgwuche@gmail.com">davgwuche@gmail.com</a>
+          </div>
+          <dl class="hero-meta">
+            <div>
+              <dt>Experience</dt>
+              <dd>7+ years</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Laravel · Vue.js · APIs</dd>
+            </div>
+            <div>
+              <dt>Community</dt>
+              <dd>GDG Abuja · Laravel Abuja</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="hero-portrait" data-reveal style="--reveal-delay: 120ms">
+          <img
+            src="Ogwuche_David_potrait.png"
+            alt="Portrait of David Ogwuche"
+            width="640"
+            height="800"
+            fetchpriority="high"
+          />
+          <figcaption class="hero-badge">Software Engineer</figcaption>
+        </figure>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>PHP</span>
+          <span>Laravel</span>
+          <span>Vue.js</span>
+          <span>Livewire</span>
+          <span>Inertia.js</span>
+          <span>REST APIs</span>
+          <span>Tailwind CSS</span>
+          <span>Docker</span>
+          <span>MySQL</span>
+          <span>PHP</span>
+          <span>Laravel</span>
+          <span>Vue.js</span>
+          <span>Livewire</span>
+          <span>Inertia.js</span>
+          <span>REST APIs</span>
+          <span>Tailwind CSS</span>
+          <span>Docker</span>
+          <span>MySQL</span>
+        </div>
+      </div>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <header class="section-header" data-reveal>
+            <div>
+              <p class="section-kicker">01 — Selected work</p>
+              <h2 class="section-title" id="work-title">Products I’ve shipped</h2>
+            </div>
+            <p class="section-copy">
+              Platforms spanning payments, civic tech, education, and agriculture —
+              built for real users, not demos.
+            </p>
           </header>
-          
-          <div class="container mx-auto bg-white p-6 shadow-md rounded-lg mt-6">
-            <div class="flex items-center space-x-4">
-              <img src="Ogwuche_David_potrait.png" alt="David Ogwuche" class="w-24 h-24 rounded-full object-cover" />
-              <div>
-                <h1 class="text-2xl font-bold">OGWUCHE DAVID</h1>
-                <p class="text-gray-600">Fullstack Engineer | Abuja, Nigeria</p>
-                <a href="mailto:davgwuche@gmail.com" class="text-blue-500">davgwuche@gmail.com</a>
-                <div class="mt-2">
-                  <h2 class="text-2xl font-semibold">About Me</h2>
-                  <p class="mt-2">A professional Software Engineer with over 7 years of experience in building scalable enterprise, fintech, and e-commerce applications. I specialize in Laravel, PHP, Vue.js, Laravel Livewire, Tailwind CSS, Bootstrap, and other modern technologies. I am also a community builder with Google Developer Group Abuja and Laravel Abuja, actively contributing to the growth of the developer ecosystem.</p>
-                  <div class="flex space-x-4 mt-2">
-                    <a href="https://github.com/Davematics" class="text-blue-600  flex items-center">
-                      <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.207 11.385.6.113.793-.258.793-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.755-1.333-1.755-1.089-.744.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.107-.775.42-1.305.763-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.237-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.289-1.552 3.296-1.23 3.296-1.23.654 1.652.243 2.873.12 3.176.771.84 1.236 1.91 1.236 3.22 0 4.61-2.805 5.625-5.478 5.921.43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.192.696.798.576 4.765-1.585 8.199-6.081 8.199-11.383 0-6.627-5.373-12-12-12z" /></svg>
-                      GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/davematics" class="text-blue-600  flex items-center">
-                      <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451c.98 0 1.778-.774 1.778-1.729V1.729C24 .774 23.206 0 22.225 0zM7.119 20.452H3.557V9.175h3.562v11.277zM5.338 7.701c-1.14 0-2.064-.928-2.064-2.068 0-1.14.924-2.068 2.064-2.068s2.063.928 2.063 2.068c0 1.14-.923 2.068-2.063 2.068zm15.113 12.751h-3.562v-5.48c0-1.307-.027-2.986-1.821-2.986-1.824 0-2.103 1.425-2.103 2.895v5.57h-3.561V9.175h3.419v1.543h.05c.477-.9 1.639-1.849 3.372-1.849 3.607 0 4.275 2.371 4.275 5.457v6.126z" /></svg>
-                      LinkedIn
-                    </a>
-                  </div>
-                </div>
+
+          <div class="project-grid">
+            <a
+              class="project-card"
+              href="https://dentfinder.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-reveal
+            >
+              <div class="project-card__media">
+                <span class="project-card__index">01</span>
+                <img src="projects/denfinder.png" alt="Dent Finder website screenshot" loading="lazy" />
               </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">
+                  Dent Finder
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3.5 12.5 12.5 3.5M6 3.5h6.5V10" stroke="currentColor" stroke-width="1.5" />
+                  </svg>
+                </h3>
+                <p class="project-card__tech">Laravel · Inertia.js · Vue.js · MySQL · Tailwind CSS · Docker</p>
+              </div>
+            </a>
+
+            <a
+              class="project-card"
+              href="https://wowpay.ng"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-reveal
+              style="--reveal-delay: 80ms"
+            >
+              <div class="project-card__media">
+                <span class="project-card__index">02</span>
+                <img src="projects/wow.png" alt="WOW Pay website screenshot" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">
+                  WOW Pay
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3.5 12.5 12.5 3.5M6 3.5h6.5V10" stroke="currentColor" stroke-width="1.5" />
+                  </svg>
+                </h3>
+                <p class="project-card__tech">Laravel · Vue.js · Tailwind CSS · Docker</p>
+              </div>
+            </a>
+
+            <a
+              class="project-card"
+              href="https://umudikeseeds.ng/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-reveal
+              style="--reveal-delay: 40ms"
+            >
+              <div class="project-card__media">
+                <span class="project-card__index">03</span>
+                <img src="projects/seed.png" alt="Umudike Seeds Portal screenshot" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">
+                  Umudike Seeds Portal
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3.5 12.5 12.5 3.5M6 3.5h6.5V10" stroke="currentColor" stroke-width="1.5" />
+                  </svg>
+                </h3>
+                <p class="project-card__tech">Laravel · Livewire · Tailwind CSS · JavaScript</p>
+              </div>
+            </a>
+
+            <a
+              class="project-card"
+              href="https://obiworldwide.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-reveal
+              style="--reveal-delay: 80ms"
+            >
+              <div class="project-card__media">
+                <span class="project-card__index">04</span>
+                <img src="projects/obi.png" alt="Omega Bible Institute website screenshot" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">
+                  Omega Bible Institute
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3.5 12.5 12.5 3.5M6 3.5h6.5V10" stroke="currentColor" stroke-width="1.5" />
+                  </svg>
+                </h3>
+                <p class="project-card__tech">Laravel · Livewire · Tailwind CSS · JavaScript</p>
+              </div>
+            </a>
+
+            <article class="project-card" data-reveal style="--reveal-delay: 120ms">
+              <div class="project-card__media">
+                <span class="project-card__index">05</span>
+                <img src="projects/legendpay.png" alt="Legend Pay product screenshot" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Legend Pay</h3>
+                <p class="project-card__tech">Vue.js · Tailwind CSS</p>
+              </div>
+            </article>
+
+            <a
+              class="project-card"
+              href="https://lawff.afchub.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-reveal
+              style="--reveal-delay: 160ms"
+            >
+              <div class="project-card__media">
+                <span class="project-card__index">06</span>
+                <img src="projects/lawff.png" alt="LAWFF Portal screenshot" loading="lazy" />
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">
+                  LAWFF Portal
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3.5 12.5 12.5 3.5M6 3.5h6.5V10" stroke="currentColor" stroke-width="1.5" />
+                  </svg>
+                </h3>
+                <p class="project-card__tech">Laravel · Vue.js · Tailwind CSS · JavaScript</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <header class="section-header" data-reveal>
+            <div>
+              <p class="section-kicker">02 — Capabilities</p>
+              <h2 class="section-title" id="skills-title">Tools I work with</h2>
+            </div>
+          </header>
+
+          <div class="skill-grid">
+            <article class="skill-group" data-reveal>
+              <h3>Backend</h3>
+              <ul class="skill-list">
+                <li class="skill-chip">PHP</li>
+                <li class="skill-chip">Laravel</li>
+                <li class="skill-chip">Laravel Livewire</li>
+                <li class="skill-chip">REST APIs</li>
+                <li class="skill-chip">SQL</li>
+              </ul>
+            </article>
+            <article class="skill-group" data-reveal style="--reveal-delay: 60ms">
+              <h3>Frontend</h3>
+              <ul class="skill-list">
+                <li class="skill-chip">JavaScript</li>
+                <li class="skill-chip">Vue.js</li>
+                <li class="skill-chip">Inertia.js</li>
+                <li class="skill-chip">jQuery</li>
+                <li class="skill-chip">Tailwind CSS</li>
+                <li class="skill-chip">Bootstrap</li>
+              </ul>
+            </article>
+            <article class="skill-group" data-reveal style="--reveal-delay: 120ms">
+              <h3>Mobile &amp; DevOps</h3>
+              <ul class="skill-list">
+                <li class="skill-chip">Ionic</li>
+                <li class="skill-chip">Docker</li>
+                <li class="skill-chip">Cloud hosting</li>
+                <li class="skill-chip">Git</li>
+              </ul>
+            </article>
+            <article class="skill-group" data-reveal style="--reveal-delay: 180ms">
+              <h3>Currently</h3>
+              <ul class="skill-list">
+                <li class="skill-chip">Master’s in Cybersecurity</li>
+                <li class="skill-chip">Community building</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <div data-reveal>
+            <p class="section-kicker">03 — About</p>
+            <h2 class="section-title" id="about-title">Engineer, builder, community lead</h2>
+            <div class="about-text" style="margin-top: 1.5rem">
+              <p>
+                I’m a professional software engineer with over
+                <strong>7 years of experience</strong> building scalable enterprise,
+                fintech, and e-commerce applications.
+              </p>
+              <p>
+                I specialise in <strong>Laravel, PHP, Vue.js, Livewire</strong>, and
+                modern CSS. I also help grow the ecosystem around
+                <strong>Google Developer Group Abuja</strong> and
+                <strong>Laravel Abuja</strong>.
+              </p>
             </div>
           </div>
-      
-          <section class="container mx-auto bg-white p-6 shadow-md rounded-lg mt-6">
-            <h2 class="text-2xl font-semibold">Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-              <span class="bg-gray-200 p-2 rounded">PHP</span>
-              <span class="bg-gray-200 p-2 rounded">Laravel</span>
-              <span class="bg-gray-200 p-2 rounded">Laravel-Livewire</span>
-              <span class="bg-gray-200 p-2 rounded">JQuery</span>
-              <span class="bg-gray-200 p-2 rounded">Vue.js</span>
-              <span class="bg-gray-200 p-2 rounded">JavaScript</span>
-              <span class="bg-gray-200 p-2 rounded">Inertia.js</span>
-              <span class="bg-gray-200 p-2 rounded">REST APIs</span>
-              <span class="bg-gray-200 p-2 rounded">TailwindCSS</span>
-              <span class="bg-gray-200 p-2 rounded">Bootstrap</span>
-              <span class="bg-gray-200 p-2 rounded">Docker</span>
-              <span class="bg-gray-200 p-2 rounded">Cloud Hosting</span>
-              <span class="bg-gray-200 p-2 rounded">Mobile App Development (Ionic.js)</span>
-              <span class="bg-gray-200 p-2 rounded">Git</span>
-              <span class="bg-gray-200 p-2 rounded">SQL</span>
-            </div>
-          </section>
-      
-          <section class="container mx-auto bg-white p-6 shadow-md rounded-lg mt-6">
-            <h2 class="text-2xl font-semibold">Education</h2>
-            <ul class="mt-4 list-disc list-inside">
-                <li>Master’s in Cybersecurity (In Progress)</li>
-                <li>BSc Mathematics/Computer Science - Federal University of Agriculture Makurdi (2013 - 2017)</li>
-                <li>Diploma in Software Engineering - ZOE Information Technology Makurdi (2016 - 2017)</li>
-                <li>SSCE - New Generation International School Aso Maraba (2008 - 2013)</li>
-               
-            </ul>
-        </section>
-        
-      
-          <section class="container mx-auto bg-white p-6 shadow-md rounded-lg mt-6">
-            <h2 class="text-2xl font-semibold">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-             
-              <a class="border border-gray-200  rounded-lg shadow-md" href="https://dentfinder.io/">
-                <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 rounded-t-md overflow-hidden">
-                    <img src="projects/denfinder.png" class="w-full h-full object-cover" />
-                </div>
-                <p class="mt-2 font-semibold text-center text-lg sm:text-xl">Dent Finder</p>
-                <p class="mt-2 text-gray-700 text-sm sm:text-base text-center p-4">
-                    <strong>Technologies Used:</strong> Laravel, Inertia.JS, Vue.js, MySQL,TailwindCSS, Docker, GitHub
-                </p>
-            </a>
-              <a class="border border-gray-200  rounded-lg shadow-md" href="https://wowpay.ng">
-                <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 rounded-t-md overflow-hidden">
-                    <img src="projects/wow.png" class="w-full h-full object-cover" />
-                </div>
-                <p class="mt-2 font-semibold text-center text-lg sm:text-xl">WOW Pay</p>
-                <p class="mt-2 text-gray-700 text-sm sm:text-base text-center p-4">
-                    <strong>Technologies Used:</strong> Laravel, Vue.js, TailwindCSS, GitHub,Docker
-                </p>
-            </a>
-            
-            
-            <a class="border border-gray-200  rounded-lg shadow-md" href="https://umudikeseeds.ng/">
-                <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 rounded-t-md overflow-hidden">
-                    <img src="projects/seed.png" class="w-full h-full object-cover" />
-                </div>
-                <p class="mt-2 font-semibold text-center text-lg sm:text-xl">Umudike Seeds Portal</p>
-                <p class="mt-2 text-gray-700 text-sm sm:text-base text-center p-4">
-                    <strong>Technologies Used:</strong> Laravel, Laravel-Livewire, TailwindCSS,JavaScript, GitHub
-                </p>
-            </a>
 
-            <a class="border border-gray-200  rounded-lg shadow-md" href="https://obiworldwide.com/">
-                <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 rounded-t-md overflow-hidden">
-                    <img src="projects/obi.png" class="w-full h-full object-cover" />
-                </div>
-                <p class="mt-2 font-semibold text-center text-lg sm:text-xl">Omega Bible Institute</p>
-                <p class="mt-2 text-gray-700 text-sm sm:text-base text-center p-4">
-                    <strong>Technologies Used:</strong> Laravel, Laravel-Livewire, TailwindCSS,JavaScript, GitHub
-                </p>
-            </a>
-
-            <a class="border border-gray-200  rounded-lg shadow-md" href="https://obiworldwide.com/">
-                <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 rounded-t-md overflow-hidden">
-                    <img src="projects/legendpay.png" class="w-full h-full object-cover" />
-                </div>
-                <p class="mt-2 font-semibold text-center text-lg sm:text-xl">Legend Pay</p>
-                <p class="mt-2 text-gray-700 text-sm sm:text-base text-center p-4">
-                    <strong>Technologies Used:</strong> Vue.js, TailwindCSS, GitHub
-                </p>
-            </a>
-            <a class="border border-gray-200  rounded-lg shadow-md" href="https://lawff.afchub.org/">
-                <div class="w-full h-60 sm:h-72 md:h-80 lg:h-96 rounded-t-md overflow-hidden">
-                    <img src="projects/lawff.png" class="w-full h-full object-cover" />
-                </div>
-                <p class="mt-2 font-semibold text-center text-lg sm:text-xl">LAWFF Portal</p>
-                <p class="mt-2 text-gray-700 text-sm sm:text-base text-center p-4">
-                    <strong>Technologies Used:</strong> Laravel, Vue.js, TailwindCSS,JavaScript, GitHub
-                </p>
-            </a>
-            </div>
-          </section>
-      
-          <footer class="bg-gray-800 text-white text-center py-4 mt-6 mb-0">
-            <p>&copy; 2025 David Ogwuche. All Rights Reserved.</p>
-          </footer>
+          <div data-reveal style="--reveal-delay: 100ms">
+            <p class="section-kicker">Education</p>
+            <ol class="timeline">
+              <li class="timeline-item">
+                <h3>Master’s in Cybersecurity</h3>
+                <p>In progress</p>
+              </li>
+              <li class="timeline-item">
+                <h3>BSc Mathematics / Computer Science</h3>
+                <p>Federal University of Agriculture, Makurdi · 2013–2017</p>
+              </li>
+              <li class="timeline-item">
+                <h3>Diploma in Software Engineering</h3>
+                <p>ZOE Information Technology, Makurdi · 2016–2017</p>
+              </li>
+              <li class="timeline-item">
+                <h3>SSCE</h3>
+                <p>New Generation International School, Aso Maraba · 2008–2013</p>
+              </li>
+            </ol>
+          </div>
         </div>
-</body>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-panel" data-reveal>
+            <div>
+              <p class="section-kicker">04 — Contact</p>
+              <h2 class="section-title" id="contact-title">Let’s build something that lasts</h2>
+              <p class="section-copy">
+                Open to product engineering, architecture, and collaborations.
+                Reach out by email or find me on GitHub and LinkedIn.
+              </p>
+            </div>
+            <div class="contact-links">
+              <a class="btn btn-primary" href="mailto:davgwuche@gmail.com">Email David</a>
+              <a
+                class="btn btn-ghost"
+                href="https://github.com/Davematics"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                class="btn btn-ghost"
+                href="https://www.linkedin.com/in/davematics"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>&copy; <span data-year>2026</span> David Ogwuche. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:davgwuche@gmail.com">Email</a>
+          <a href="https://github.com/Davematics" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/davematics" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
 </html>
